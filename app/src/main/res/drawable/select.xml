@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false" ><!--未按下状态-->
+
+        <shape android:shape="rectangle"> <!--矩形-->
+            <gradient
+                android:startColor="#ff2a542e"
+                android:endColor="#ff7fff8e"
+                android:angle="90"/><!--按钮背景色变化梯度-->
+
+            <corners android:radius="4dp"/><!--按钮圆角弧度-->
+
+            <stroke
+                android:width="0.5dp"
+                android:color="#60000000" /><!--按钮四周边缘色（即阴影）-->
+        </shape>
+
+    </item>
+
+    <item android:state_pressed="true" ><!--按下状态-->
+
+        <shape android:shape="rectangle"><!--矩形-->
+            <gradient
+                android:startColor="#ff7fff8e"
+                android:endColor="#ff2a542e"
+                android:angle="90"/><!--按钮背景色变化梯度-->
+
+            <corners android:radius="4dp"/><!--按钮圆角弧度-->
+
+            <stroke
+                android:width="2dp"
+                android:color="#60000000" /><!--按钮四周边缘色（即阴影）-->
+        </shape>
+
+    </item>
+
+</selector>
